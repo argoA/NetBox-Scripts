@@ -14,12 +14,9 @@ class GetMikroTikInterfaceStatsScript(Script):
     password = StringVar(
         description="Password used to log into the devices"
     )
-    site = StringVar(
-        description="For testing purposes"
-    )
 
     def run(self, data, commit):
         
         # Get a list of MikroTik routers
-        for device in Device.objects.filter(site=data['site']):
+        for device in Device.objects.all():
             self.log_success(device)
