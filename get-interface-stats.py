@@ -14,9 +14,8 @@ class GetMikroTikInterfaceStatsScript(Script):
     password = StringVar(
         description="Password used to log into the devices"
     )
-    site = ObjectVar(
-        description="Site of the device",
-        
+    site = StringVar(
+        description="For testing purposes"
     )
 
     def run(self, data, commit):
