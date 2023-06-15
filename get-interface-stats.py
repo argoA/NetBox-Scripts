@@ -1,5 +1,5 @@
 from extras.scripts import *
-from dcim.models import Device, DeviceType, Manufacturer
+from dcim.models import Device
 
 import routeros_api
 
@@ -19,4 +19,4 @@ class GetMikroTikInterfaceStatsScript(Script):
 
   def run(self, data, commit):
     device = Device.objects.get(name="Test-Router")
-    self.log_info(device)
+    self.log_success(device)
