@@ -1,4 +1,7 @@
 from extras.scripts import *
+from dcim.models import Device, DeviceType, Manufacturer
+
+import routeros_api
 
 class GetMikroTikInterfaceStatsScript(Script):
   
@@ -15,4 +18,5 @@ class GetMikroTikInterfaceStatsScript(Script):
   )
 
   def run(self, data, commit):
-    self.log_info(f"{data['user']} : {data['password']}")
+    for device in Device.objects.get(name="Test-Router")
+    self.log_info(device)
