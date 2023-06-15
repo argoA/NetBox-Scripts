@@ -8,11 +8,13 @@ class GetMikroTikInterfaceStatsScript(Script):
     field_order = ['user', 'password']
     
     user = StringVar(
-      description="Username to log into the devices"
+      description="Username to log into the devices",
+      required=True
     ) 
     
     password = StringVar(
-      description="Password to log into the devices"
+      description="Password to log into the devices",
+      required=True
     )
 
   def run(self, data, commit):
