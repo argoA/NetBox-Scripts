@@ -7,15 +7,12 @@ class GetMikroTikInterfaceStatsScript(Script):
     description = "Pull interface stats for MikroTik devices."
     field_order = ['user', 'password']
     
-    user = StringVar(
-      description="Username to log into the devices",
-      required=True
-    ) 
-    
-    password = StringVar(
-      description="Password to log into the devices",
-      required=True
-    )
+  user = StringVar(
+    description="Username used to log into the devices"
+  )
+  password = StringVar(
+    description="Password used to log into the devices"
+  )
 
   def run(self, data, commit):
     self.log_info(f"{data['user']} : {data['password']}")
