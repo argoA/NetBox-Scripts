@@ -16,5 +16,4 @@ class GetMikroTikInterfaceStatsScript(Script):
   )
 
   def run(self, data, commit):
-    router = Device.objects.get(name='Testing-Router')
-    self.log_success(router)
+    pass
