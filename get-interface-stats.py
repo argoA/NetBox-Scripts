@@ -15,5 +15,5 @@ class GetMikroTikInterfaceStatsScript(Script):
       description="Password to log into the devices"
     )
 
-  def run(self):
-    pass
+  def run(self, data, commit):
+    self.log_info(f"{data['user']} : {data['password']}")
