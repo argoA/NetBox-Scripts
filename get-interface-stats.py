@@ -18,5 +18,5 @@ class GetMikroTikInterfaceStatsScript(Script):
   )
 
   def run(self, data, commit):
-    for device in Device.objects.get(name="Test-Router")
-    self.log_info(device)
+    for device in Device.objects.get(name="Test-Router"):
+      self.log_info(device)
