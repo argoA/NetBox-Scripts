@@ -16,5 +16,5 @@ class GetMikroTikInterfaceStatsScript(Script):
   )
 
   def run(self, data, commit):
-    for device in Device.objects.filter(manufacturer='MikroTik'):
+    for device in Device.objects.filter(name='Testing-Router'):
       self.log_success(device)
