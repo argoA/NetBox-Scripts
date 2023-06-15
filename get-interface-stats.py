@@ -1,8 +1,6 @@
 from extras.scripts import *
 from dcim.models import Device
 
-import routeros_api
-
 class GetMikroTikInterfaceStatsScript(Script):
   
   class Meta:
